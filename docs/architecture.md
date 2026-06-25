@@ -1,11 +1,11 @@
-# rustzen-cloud Architecture
+# cloud Architecture
 
 Status: current architecture
 Date: 2026-06-16
 
 ## Classification
 
-`rustzen-cloud` is a Peripheral RustZen Cloud app: Next.js App Router + Prisma +
+`cloud` is a Peripheral RustZen Cloud app: Next.js App Router + Prisma +
 PostgreSQL intended for Vercel.
 
 ## Responsibility
@@ -124,11 +124,11 @@ File: `src/app/api/billing/checkout/route.ts`
 Creates a Billing provider checkout session and redirects to Billing provider. The only supported
 public product is `product=rustzen-clear`; the current Rustzen Clear offer is
 Pro as a USD `website-listed Pro price` subscription. Source links should pass
-`source=site` when checkout is initiated by `rustzen-site`.
+`source=site` when checkout is initiated by the public `rustzen/app` site.
 
-The route uses `CREEM_API_KEY`, optional `CREEM_RUSTZEN_CLEAR_PRODUCT_ID`, and
-`CREEM_CHECKOUT_SUCCESS_URL`. If the product identifier env is not set, source defaults
-to ``.
+The route uses `CREEM_API_KEY`, `CREEM_RUSTZEN_CLEAR_PRODUCT_ID`, and
+`CREEM_CHECKOUT_SUCCESS_URL`. The product identifier is runtime configuration; if it is
+missing, checkout fails fast instead of using a source fallback.
 
 ## Legacy External Proxy
 
@@ -193,10 +193,11 @@ File: `src/app/api/webhooks/billing-provider/route.ts`
 Verifies the `billing-provider-signature` HMAC SHA-256 signature using
 `CREEM_WEBHOOK_SECRET` and stores a `BillingEvent`. The route handles
 `checkout.completed` and `subscription.paid` as access-granting events for
-Rustzen Clear. For subscription renewals, the license record is updated
-with `current_period_end_date` when the provider supplies it. `subscription.canceled`
-and `subscription.expired` mark matching provider-backed licenses inactive or
-expired.
+Rustzen Clear when Billing provider includes a provider license key in the webhook. The
+desktop activation route can also import a Billing provider license key on first use. For
+subscription renewals, the license record is updated with
+`current_period_end_date` when the provider supplies it. `subscription.canceled` and
+`subscription.expired` mark matching provider-backed licenses inactive or expired.
 
 ## Dashboard Flows
 
