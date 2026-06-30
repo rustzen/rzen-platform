@@ -1,8 +1,8 @@
 # Rustzen Design System — Cloud Dashboard
 
-> Brand & UI spec for the **cloud** admin dashboard (Next.js + Tailwind v4 + shadcn/ui).
+> Brand & UI spec for the **rzen-platform** admin dashboard (Next.js + Tailwind v4 + shadcn/ui).
 > The **token system is shared** with the marketing site and the product GUI — see
-> [`rustzen/rzen-portal` design-system.md §1](../../app/docs/design-system.md) for the
+> [`rustzen/rzen-portal` design-system.md §1](../../rzen-portal/docs/design-system.md) for the
 > authoritative token definitions. This file restates the tokens for this repo and
 > defines the dashboard-specific conventions.
 >
@@ -15,7 +15,7 @@ palette with the **Zen Blue Glass** brand system: brand-blue accents, glass card
 and a deep **zen-navy glass sidebar** (kept dark — it reads as a professional
 "control plane" — but tinted blue, not dead slate). Light + dark mode supported.
 
-## 1. Tokens (mirrors app §1)
+## 1. Tokens (mirrors rzen-portal §1)
 
 Copied into `src/app/globals.css`. Key mappings to the shadcn variable names:
 
@@ -51,7 +51,7 @@ Copied into `src/app/globals.css`. Key mappings to the shadcn variable names:
 ```
 
 Brand scale + safety + glass tiers + dark mode: identical to
-[`app/docs/design-system.md` §1](../../app/docs/design-system.md). Copy that block
+[`rzen-portal/docs/design-system.md` §1](../../rzen-portal/docs/design-system.md). Copy that block
 verbatim under `@theme inline` / `:root` / `.dark`.
 
 ## 2. Dashboard conventions
@@ -105,7 +105,7 @@ verbatim under `@theme inline` / `:root` / `.dark`.
 
 ## 3. Dark mode
 
-`.dark` swaps paper/panel/surface to the navy ramp (app §1.6). The sidebar is
+`.dark` swaps paper/panel/surface to the navy ramp (rzen-portal §1.6). The sidebar is
 already dark, so in dark mode the whole shell becomes one continuous navy canvas
 with glass panels floating on it — this is the intended premium look. Theme toggle
 in the topbar; seeded from `prefers-color-scheme`; no new dependency (inline

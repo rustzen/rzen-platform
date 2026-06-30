@@ -1,11 +1,11 @@
-# cloud Deployment Notes
+# rzen-platform Deployment Notes
 
 Status: current deployment notes
 Date: 2026-06-25
 
 ## Deployment Classification
 
-`cloud` is a Peripheral Vercel project: Next.js App Router + Prisma +
+`rzen-platform` is a Peripheral Vercel project: Next.js App Router + Prisma +
 PostgreSQL. Local validation used Homebrew PostgreSQL 17 and a local
 `rustzen_cloud_test` database.
 
@@ -84,7 +84,7 @@ Verified on 2026-06-15:
 
 Before any deploy:
 
-1. Run `git status --short --branch` in `cloud`.
+1. Run `git status --short --branch` in `rzen-platform`.
 2. Confirm current `package.json` scripts and package manager.
 3. Configure required Vercel preview/prod env values; do not commit secrets.
 4. Decide Prisma migration strategy before touching a real database.

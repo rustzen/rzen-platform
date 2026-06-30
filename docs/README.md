@@ -1,4 +1,4 @@
-# cloud Docs
+# rzen-platform Docs
 
 Status: current project docs
 Date: 2026-06-16

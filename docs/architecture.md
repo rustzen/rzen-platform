@@ -1,11 +1,11 @@
-# cloud Architecture
+# rzen-platform Architecture
 
 Status: current architecture
 Date: 2026-06-16
 
 ## Classification
 
-`cloud` is the local checkout for the `rustzen/rzen-platform` admin app: Next.js App Router + Prisma +
+`rzen-platform` is the local checkout for the `rustzen/rzen-platform` admin app: Next.js App Router + Prisma +
 PostgreSQL intended for Vercel.
 
 ## Responsibility

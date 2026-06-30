@@ -1,4 +1,4 @@
-# cloud Project Map
+# rzen-platform Project Map
 
 Status: current project map
 Date: 2026-06-25
@@ -8,9 +8,9 @@ Project type: Peripheral Rustzen Platform
 
 Command evidence:
 
-- `git -C cloud status --short --branch`: branch `main` with active local
-  modified/untracked work on 2026-06-25.
-- `git -C cloud status --ignored --short`: `.env.local`, `.next/`,
+- `git -C rzen-platform status --short --branch`: branch `main` clean and
+  synced with `origin/main` on 2026-06-30 after the local directory rename.
+- `git -C rzen-platform status --ignored --short`: `.env.local`, `.next/`,
   `.vercel/`, and `node_modules/` are ignored/local-only.
 - Vercel project `abin-projects/cloud` latest production deployment
   `dpl_EfgfPjCAnkU4uDqTkRHS1ghUgoTh` is READY from GitHub repo
