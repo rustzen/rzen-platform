@@ -14,7 +14,7 @@ PostgreSQL. Local validation used Homebrew PostgreSQL 17 and a local
 | Item | Current evidence | Status |
 | --- | --- | --- |
 | Project/team | `.vercel/project.json` points to project `cloud` under `abin-projects` | local link verified |
-| Domain | `cloud.rustzen.dev` on Vercel project `cloud` | production verified |
+| Domain | `cloud.rustzen.dev` on Vercel project `cloud` | production verified on 2026-06-25; unchanged by repository rename |
 | Framework | Next.js from `package.json` and `src/app` | source |
 | Build command | `pnpm build` -> `node scripts/with-env.mjs prisma generate && next build` | verified locally |
 | Output directory | Next.js managed output | local build verified; Vercel output not verified |
@@ -48,7 +48,7 @@ From `.env.example`:
 The production domains are `https://cloud.rustzen.dev` for the dashboard/API
 and `https://app.rustzen.dev` for the public site. The latest verified
 production deployment is `dpl_EfgfPjCAnkU4uDqTkRHS1ghUgoTh`, created from
-GitHub `rustzen/cloud` commit `4f8c0d1` after the repository was made public.
+GitHub `rustzen/rzen-platform` commit `4f8c0d1` after the repository was made public.
 Preview and production Vercel env values require live dashboard verification.
 Rustzen Clear Pro is a Billing provider subscription at website-listed Pro price. Billing provider webhook
 events must identify the Rustzen product through metadata or the configured
@@ -110,7 +110,7 @@ testing require explicit user approval.
 
 ## Verified
 
-- Vercel domain: `cloud.rustzen.dev` verified on 2026-06-25.
+- Vercel domain: `cloud.rustzen.dev` verified on 2026-06-25 and intentionally unchanged by repository rename.
 
 ## Not Verified
 

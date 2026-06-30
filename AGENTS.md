@@ -2,7 +2,7 @@
 
 ## Scope
 
-`cloud` is a Peripheral Rustzen Cloud project. It is intended to be the
+`cloud` is the local checkout for the `rustzen/rzen-platform` repository. It is intended to be the
 Next.js dashboard and cloud API surface for Rustzen desktop products, including
 license activation, release metadata, Lemon Squeezy webhooks, and an admin
 dashboard.

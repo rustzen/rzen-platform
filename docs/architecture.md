@@ -5,7 +5,7 @@ Date: 2026-06-16
 
 ## Classification
 
-`cloud` is a Peripheral Rustzen Cloud app: Next.js App Router + Prisma +
+`cloud` is the local checkout for the `rustzen/rzen-platform` admin app: Next.js App Router + Prisma +
 PostgreSQL intended for Vercel.
 
 ## Responsibility
@@ -124,7 +124,7 @@ File: `src/app/api/billing/checkout/route.ts`
 Creates a Billing provider checkout session and redirects to Billing provider. The only supported
 public product is `product=rustzen-clear`; the current Rustzen Clear offer is
 Pro as a USD `website-listed Pro price` subscription. Source links should pass
-`source=site` when checkout is initiated by the public `rustzen/app` site.
+`source=site` when checkout is initiated by the public `rustzen/rzen-portal` site.
 
 The route uses `CREEM_API_KEY`, `CREEM_RUSTZEN_CLEAR_PRODUCT_ID`, and
 `CREEM_CHECKOUT_SUCCESS_URL`. The product identifier is runtime configuration; if it is

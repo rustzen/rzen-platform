@@ -2,7 +2,7 @@
 
 Status: current project map
 Date: 2026-06-25
-Project type: Peripheral Rustzen Cloud
+Project type: Peripheral Rustzen Platform
 
 ## Current Facts
 
@@ -14,7 +14,7 @@ Command evidence:
   `.vercel/`, and `node_modules/` are ignored/local-only.
 - Vercel project `abin-projects/cloud` latest production deployment
   `dpl_EfgfPjCAnkU4uDqTkRHS1ghUgoTh` is READY from GitHub repo
-  `rustzen/cloud` commit `4f8c0d1`.
+  `rustzen/rzen-platform` commit `4f8c0d1`.
 - `pg_isready -h 127.0.0.1 -p 5432`: local Homebrew PostgreSQL accepts
   connections.
 - `psql -h 127.0.0.1 -p 5432 -d rustzen_cloud_test`: local test database is
@@ -29,7 +29,7 @@ Command evidence:
 | Styling | Tailwind CSS via `postcss.config.mjs` plus `src/app/globals.css` | source |
 | Database | Prisma + PostgreSQL | source; local test DB verified |
 | Analytics | `@vercel/analytics` in `src/app/layout.tsx` | source |
-| Hosting target | Vercel project `abin-projects/cloud`; production domain `cloud.rustzen.dev` | deployment verified on 2026-06-25 |
+| Hosting target | Vercel project `abin-projects/cloud`; production domain `cloud.rustzen.dev` | deployment verified on 2026-06-25; unchanged by repository rename |
 
 ## Package Manager And Commands
 

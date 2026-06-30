@@ -2,7 +2,7 @@
 
 > Brand & UI spec for the **cloud** admin dashboard (Next.js + Tailwind v4 + shadcn/ui).
 > The **token system is shared** with the marketing site and the product GUI — see
-> [`rustzen/app` design-system.md §1](../../app/docs/design-system.md) for the
+> [`rustzen/rzen-portal` design-system.md §1](../../app/docs/design-system.md) for the
 > authoritative token definitions. This file restates the tokens for this repo and
 > defines the dashboard-specific conventions.
 >
